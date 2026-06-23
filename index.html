@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Euthomas — Frontend Developer</title>
+    <meta name="description" content="Euthomas — Frontend Developer based in Port Harcourt, Nigeria. Building clean, responsive interfaces with HTML, CSS, JavaScript and React." />
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow"></div>
+
+    <!-- ============================================================
+        NAV
+        ============================================================ -->
+    <nav class="nav">
+      <div class="wrap nav-inner">
+        <a href="#home" class="nav-logo" data-tooltip="Etiusen Usen Thomas">
+          <span class="bracket">&lt;</span>Euthomas<span class="bracket">/&gt;</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+          <a href="https://www.linkedin.com/in/etiusen-thomas-9971a4370" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm13.5 10.27h-3v-4.5c0-1.07-.02-2.45-1.5-2.45-1.5 0-1.73 1.17-1.73 2.38v4.57h-3v-9h2.88v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- ============================================================
+        HERO
+        ============================================================ -->
+    <header class="hero" id="home">
+      <div class="wrap hero-grid">
+
+        <div class="hero-content">
+          <span class="hero-tag"><span class="dot"></span> Available for freelance collaborations &amp; frontend roles.</span>
+
+          <h1>I build clean, high-quality interfaces<br>that feel <span class="accent">finished</span>.</h1>
+
+          <p class="hero-desc">Frontend developer based in Port Harcourt, Nigeria — building responsive, high-quality web interfaces with HTML, CSS, and JavaScript, while expanding into React and modern frontend tools.</p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore my work →</a>
+            <a href="#contact" class="btn btn-secondary">Let's work together</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="hero-meta-item"><strong>3+</strong> Years of hands-on experience</div>
+            <div class="hero-meta-item"><strong>7+</strong> Frontend projects</div>
+            <div class="hero-meta-item"><strong>Live</strong> Production experience</div>
+            <div class="hero-meta-item"><strong>Core stack</strong> HTML/CSS/JS/REACT</div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-window">
+            <div class="code-window-bar">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+              <span class="code-window-label">about-me.js</span>
+            </div>
+            <div class="code-window-body">
+              <div class="code-line"><span class="code-line-num">1</span><span class="tok-key">const</span>&nbsp;<span class="tok-plain">developer</span>&nbsp;=&nbsp;{</div>
+              <div class="code-line"><span class="code-line-num">2</span>&nbsp;&nbsp;name:&nbsp;<span class="tok-str">'Euthomas'</span>,</div>
+              <div class="code-line"><span class="code-line-num">3</span>&nbsp;&nbsp;role:&nbsp;<span class="tok-str">'Frontend Developer'</span>,</div>
+              <div class="code-line"><span class="code-line-num">4</span>&nbsp;&nbsp;based:&nbsp;<span class="tok-str">'Port Harcourt, NG'</span>,</div>
+              <div class="code-line"><span class="code-line-num">5</span>&nbsp;&nbsp;stack:&nbsp;[<span class="tok-str">'HTML'</span>,&nbsp;<span class="tok-str">'CSS'</span>,&nbsp;<span class="tok-str">'JS'</span>],</div>
+              <div class="code-line"><span class="code-line-num">6</span>&nbsp;&nbsp;learning:&nbsp;<span class="tok-str">'React'</span>,</div>
+              <div class="code-line"><span class="code-line-num">7</span>&nbsp;&nbsp;<span class="tok-fn">available</span>:&nbsp;<span class="tok-key">Open for work</span>,</div>
+              <div class="code-line"><span class="code-line-num">8</span>};</div>
+              <div class="code-line"><span class="code-line-num">9</span></div>
+              <div class="code-line"><span class="code-line-num">10</span><span class="tok-com">// always shipping something</span></div>
+            </div>
+          </div>
+          <div class="photo-card">
+            <img src="EUTHOMAS-IMG/EUThomas.jpeg" alt="Portrait of Euthomas" />
+          </div>
+          <div class="photo-card2">
+            <img src="EUTHOMAS-IMG/EUThomas.jpeg" alt="Portrait of Euthomas" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============================================================
+        ABOUT
+        ============================================================ -->
+    <section id="about">
+      <div class="wrap">
+        <div class="section-intro fade-up">
+          <span class="eyebrow">About</span>
+          <h2>From IT support<br>to shipping interfaces.</h2>
+          <p class="about-fullname">Etiusen Usen Thomas</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text fade-up">
+            <p>I'm a frontend developer based in Port Harcourt, Nigeria, focused on building clean, responsive interfaces using <strong>HTML, CSS, JavaScript and React.</strong> With a background in IT support, I've spent time solving real-world technical issues and keeping systems running smoothly. That experience shapes how I approach development today — with a strong focus on reliability, clear structure, and user experience.</p>
+            <p>Over the past 3+ years, I've sharpened my skills through hands-on projects — from a live client portfolio to design-to-code challenges and collaborative builds — while expanding into React and modern frontend development.</p>
+            <p>I pay close attention to the details that make a product feel complete: smooth interactions, thoughtful layouts, and maintainable code. In my current role at LATC Marine, I provide IT support, troubleshooting systems and helping keep operations running efficiently.</p>
+            <p>I'm open to freelance projects and frontend opportunities where I can contribute and deliver high-quality user experiences.</p>
+          </div>
+
+          <div class="about-card fade-up">
+            <p class="about-card-title">Experience</p>
+
+            <div class="role-row">
+              <div class="role-info">
+                <p>IT Support &amp; Operations Staff</p>
+                <p>LATC Marine — Port Harcourt, Nigeria</p>
+              </div>
+              <span class="role-date">Jun 2023 — Present</span>
+            </div>
+
+            <div class="role-row">
+              <div class="role-info">
+                <p>Freelance Frontend Developer</p>
+                <p>Self-employed — Remote</p>
+              </div>
+              <span class="role-date">2024 — Present</span>
+            </div>
+
+            <div class="role-row">
+              <div class="role-info">
+                <p>B.Sc. Computer Science</p>
+                <p>National Open University of Nigeria (NOUN)</p>
+              </div>
+              <span class="role-date">In progress</span>
+            </div>
+            
+            <div class="role-row">
+              <div class="role-info">
+                <p>Frontend Developer Career Path</p>
+                <p>Scrimba — In progress</p>
+              </div>
+              <span class="role-date">2024 — Present</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+        SKILLS
+        ============================================================ -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-intro fade-up">
+          <span class="eyebrow">Skills</span>
+          <h2>What I work with.</h2>
+          <p>Honest levels — strongest in HTML/CSS, comfortable in JavaScript, and actively building toward React.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div>
+            <div class="skill-row fade-up">
+              <div class="skill-top"><span class="skill-name">HTML</span><span class="skill-pct">90%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target:90%"></div></div>
+            </div>
+            <div class="skill-row fade-up">
+              <div class="skill-top"><span class="skill-name">CSS</span><span class="skill-pct">85%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target:85%"></div></div>
+            </div>
+            <div class="skill-row fade-up">
+              <div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">70%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target:70%"></div></div>
+            </div>
+          </div>
+          <div>
+            <div class="skill-row fade-up">
+              <div class="skill-top"><span class="skill-name">React <span style="color:var(--orange)">— learning</span></span><span class="skill-pct">40%</span></div>
+              <div class="skill-track"><div class="skill-fill learning" style="--target:40%"></div></div>
+            </div>
+            <div class="skill-row fade-up">
+              <div class="skill-top"><span class="skill-name">Git &amp; GitHub</span><span class="skill-pct">65%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target:65%"></div></div>
+            </div>
+            <div class="skill-row fade-up">
+              <div class="skill-top"><span class="skill-name">Responsive Design</span><span class="skill-pct">85%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target:85%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tools-row fade-up">
+          <p class="tools-label">Tools &amp; environment</p>
+          <div class="tools-list">
+            <span class="tool-chip">VS Code</span>
+            <span class="tool-chip">Netlify</span>
+            <span class="tool-chip">Formspree</span>
+            <span class="tool-chip">Figma (handoff)</span>
+            <span class="tool-chip">Chrome DevTools</span>
+            <span class="tool-chip">npm</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+        PROJECTS
+        ============================================================ -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-intro fade-up">
+          <span class="eyebrow">Projects</span>
+          <h2>Things I've actually shipped.</h2>
+          <p>Here are a few projects that reflect my approach to frontend development — clean design, responsive structure, and attention to detail.</p>
+        </div>
+
+        <div class="projects-list">
+
+          <div class="project-row fade-up">
+            <span class="project-path">~/projects/<span class="file">winnie-portfolio</span></span>
+            <div class="project-main">
+              <h3>Winnie Onwuka — Data Analyst Portfolio</h3>
+              <p>Built and deployed a live client portfolio site end-to-end — structure, styling, a working contact form with a focus on clarity, performance, and usability.</p>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag live">Live client project</span>
+              </div>
+            </div>
+            <a href="https://winnie-onwuka.netlify.app" target="_blank" rel="noopener" class="project-link">View live →</a>
+          </div>
+
+          <div class="project-row fade-up">
+            <span class="project-path">~/projects/<span class="file">weeb-challenge</span></span>
+            <div class="project-main">
+              <h3>Weeb — Design-to-Code Challenge</h3>
+              <p>Converted a provided UI design into a fully responsive landing page using semantic HTML and pure CSS, including animated navigation and hover interactions built without JavaScript.</p>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">Design-to-code</span>
+              </div>
+            </div>
+            <a href="#" class="project-link">View code →</a>
+          </div>
+
+          <div class="project-row fade-up">
+            <span class="project-path">~/projects/<span class="file">aethergrid</span></span>
+            <div class="project-main">
+              <h3>AetherGrid Web Solutions</h3>
+              <p>Designed and built a multi-page agency website (Home, About, Services, Founders) as part of a 2–3 person team — owned the layout design and frontend build for the Landing and About pages.</p>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">Team project</span>
+              </div>
+            </div>
+            <a href="#" class="project-link">Coming soon →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+        CONTACT
+        ============================================================ -->
+    <section id="contact">
+      <div class="wrap contact-grid">
+
+        <div class="contact-info fade-up">
+          <span class="eyebrow">Contact</span>
+          <h2>Let's build<br>something.</h2>
+          <p>I'm open to freelance opportunities and frontend roles where I can contribute, grow, and build meaningful digital experiences.</p>
+
+          <div class="contact-detail">
+            <p class="contact-detail-label">Email</p>
+            <p class="contact-detail-value"><a href="mailto:euthomas15@gmail.com">euthomas15@gmail.com</a></p>
+          </div>
+          <div class="contact-detail">
+            <p class="contact-detail-label">Location</p>
+            <p class="contact-detail-value">Port Harcourt, Nigeria — open to remote</p>
+          </div>
+          <div class="contact-detail">
+            <p class="contact-detail-label">Socials</p>
+            <p class="contact-detail-value">LinkedIn · GitHub <span style="color:var(--slate); font-size:0.85rem;"></span></p>
+          </div>
+        </div>
+
+        <div class="fade-up">
+          <div class="form-success" id="form-success">
+            ✓ Thanks for reaching out — I'll get back to you shortly.
+          </div>
+
+          <form id="contact-form" action="https://formspree.io/f/xpqegbyw" method="POST" class="contact-form">
+            <input type="hidden" name="_subject" value="New message from your portfolio — Euthomas" />
+            <input type="text" name="_gotcha" style="display:none" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full name</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input class="form-input" type="text" id="subject" name="subject" placeholder="What's this about?" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell me about the project or role…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-send" id="submit-btn">Send message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+        FOOTER
+        ============================================================ -->
+    <footer>
+      <div class="wrap footer-inner">
+        <span>© 2026 Euthomas — Designed &amp; built by hand.</span>
+        <span class="footer-cta">Open to work — <a href="#contact">Let's build something.</a></span>
+        <div class="footer-icons">
+          <a href="https://www.linkedin.com/in/etiusen-thomas-9971a4370" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
