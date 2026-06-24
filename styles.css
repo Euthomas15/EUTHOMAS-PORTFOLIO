@@ -987,7 +987,11 @@ footer {
 }
 
 /* Make sure all content sits above the canvas */
-.nav,
+.nav {
+  position: fixed;
+  z-index: 100;
+}
+
 header,
 section,
 footer {
