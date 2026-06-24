@@ -1055,3 +1055,22 @@ body.light-mode .code-window-mini {
 body.light-mode #rainCanvas {
   opacity: 0.08;
 }
+
+/* Force code window to always look like a dark editor */
+body.light-mode .code-window-body,
+body.light-mode .code-window-mini .code-window-body {
+  background: #1c1c2e;
+  color: #C9CDD6;
+}
+
+body.light-mode .tok-key { color: #5B8DEF !important; }
+body.light-mode .tok-str { color: #E8602C !important; }
+body.light-mode .tok-fn { color: #C9A8F5 !important; }
+body.light-mode .tok-plain { color: #C9CDD6 !important; }
+body.light-mode .tok-com { color: #8A93A6 !important; }
+body.light-mode .code-window-label { color: #8A93A6 !important; }
+body.light-mode .code-line-num { color: #3a3a4a !important; }
+body.light-mode .code-window-bar {
+  background: #1c1c2e;
+  border-color: #262C3A;
+}
