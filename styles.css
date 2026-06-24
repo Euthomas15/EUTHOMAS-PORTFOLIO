@@ -913,3 +913,141 @@ footer {
 @media (max-width: 360px) {
   .hero-visual { order: -1; max-width: 320px; margin: 0 auto 24px; }
 }
+
+/* ============================================================
+   PAGE LOADER
+   ============================================================ */
+
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--ink);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.loader-logo {
+  font-family: var(--font-mono);
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--paper);
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.loader-logo .bracket { color: var(--orange); }
+
+.loader-bar {
+  width: 160px;
+  height: 3px;
+  background: var(--ink-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.loader-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--blue), var(--orange));
+  border-radius: 4px;
+  animation: loadFill 1.4s ease forwards;
+}
+
+@keyframes loadFill {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+/* ============================================================
+   RAIN CANVAS
+   ============================================================ */
+
+#rainCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.18;
+}
+
+/* Make sure all content sits above the canvas */
+.nav,
+header,
+section,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   DARK / LIGHT TOGGLE
+   ============================================================ */
+
+.theme-toggle {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 200;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--ink-soft);
+  border: 1px solid var(--ink-border);
+  color: var(--paper);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.theme-toggle:hover {
+  border-color: var(--blue);
+  transform: scale(1.1);
+}
+
+.icon-sun { display: none; }
+.icon-moon { display: block; }
+
+/* Light mode overrides */
+body.light-mode {
+  --ink: #F5F3EF;
+  --ink-soft: #ECEAE4;
+  --ink-border: #D8D4CC;
+  --paper: #1A1814;
+  --paper-dim: #3D3A34;
+  --slate: #6B6560;
+}
+
+body.light-mode .icon-sun { display: block; }
+body.light-mode .icon-moon { display: none; }
+
+body.light-mode .nav {
+  background: rgba(245, 243, 239, 0.85);
+}
+
+body.light-mode .code-window,
+body.light-mode .code-window-mini {
+  background: #1c1c2e;
+}
+
+body.light-mode #rainCanvas {
+  opacity: 0.08;
+}

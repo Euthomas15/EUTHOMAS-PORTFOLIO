@@ -16,6 +16,33 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
+    <!-- ============================================================
+     PAGE LOADER
+     ============================================================ -->
+    <div class="page-loader" id="pageLoader">
+      <div class="loader-content">
+        <span class="loader-logo"><span class="bracket">&lt;</span>ET<span class="bracket">/&gt;</span></span>
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+        RAIN CANVAS (falling effect)
+        ============================================================ -->
+    <canvas id="rainCanvas"></canvas>
+
+    <!-- ============================================================
+        DARK/LIGHT TOGGLE BUTTON
+        ============================================================ -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1zm0 17a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0v-1a1 1 0 0 1 1-1zm9-8a1 1 0 0 1 0 2h-1a1 1 0 0 1 0-2h1zM4 11a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2h1zm14.66-5.66a1 1 0 0 1 0 1.41l-.71.71a1 1 0 1 1-1.41-1.41l.71-.71a1 1 0 0 1 1.41 0zM7.05 16.95a1 1 0 0 1 0 1.41l-.71.71a1 1 0 1 1-1.41-1.41l.71-.71a1 1 0 0 1 1.41 0zm11.31 0a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 1 1-1.41-1.41l.71-.71zM5.64 5.64a1 1 0 0 1 1.41 1.41l-.71.71A1 1 0 0 1 4.93 6.34l.71-.71zM12 7a5 5 0 1 1 0 10A5 5 0 0 1 12 7z"/></svg>
+    </button>
+
+    <!-- ============================================================
+        Cursor glow effect
+        ============================================================ -->
     <div class="cursor-glow"></div>
 
     <!-- ============================================================
