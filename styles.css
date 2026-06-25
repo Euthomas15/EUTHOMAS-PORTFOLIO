@@ -976,11 +976,11 @@ footer {
    ============================================================ */
 
 #rainCanvas {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 0;
   pointer-events: none;
   opacity: 0.18;
@@ -1053,18 +1053,19 @@ body.light-mode .code-window-mini {
 }
 
 body.light-mode #rainCanvas {
-  opacity: 0.08;
+  opacity: 0.19;
+  filter: invert(1);
 }
 
 /* Force code window to always look like a dark editor */
 body.light-mode .code-window-body,
 body.light-mode .code-window-mini .code-window-body {
   background: #1c1c2e;
-  color: #C9CDD6;
+  color: #98C379;
 }
 
 body.light-mode .tok-key { color: #5B8DEF !important; }
-body.light-mode .tok-str { color: #E8602C !important; }
+body.light-mode .tok-str { color: #F7C873 !important; }
 body.light-mode .tok-fn { color: #C9A8F5 !important; }
 body.light-mode .tok-plain { color: #C9CDD6 !important; }
 body.light-mode .tok-com { color: #8A93A6 !important; }
