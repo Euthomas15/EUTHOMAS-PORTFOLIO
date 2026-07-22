@@ -70,11 +70,6 @@ a { color: inherit; text-decoration: none; }
    TYPE UTILITIES
    ============================================================ */
 
-.accent-noun{
-  text-transform: uppercase;
-  color: var(--blue);
-}
-
 .eyebrow {
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -339,6 +334,12 @@ section {
   font-size: clamp(2.6rem, 5vw, 4rem);
   line-height: 1.08;
   margin-bottom: 22px;
+}
+
+.accent-noun{
+  text-transform: uppercase;
+  color: var(--blue);
+  font-size: smaller;
 }
 
 .hero h1 .accent { color: var(--blue); }
