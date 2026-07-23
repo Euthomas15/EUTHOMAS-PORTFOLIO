@@ -1089,8 +1089,7 @@ body.light-mode .code-window-bar {
 /* Firefox & Chrome and More */
 html{
 
-    scrollbar-width:thin;
-
-    scrollbar-color:var(--blue) var(--ink);
+  scrollbar-width: thin;
+  scrollbar-color:var(--blue) var(--ink);
 
 }
