@@ -1081,3 +1081,16 @@ body.light-mode .code-window-bar {
   background: #1c1c2e;
   border-color: #262C3A;
 }
+
+/*==================================================
+            PREMIUM SCROLLBAR
+==================================================*/
+
+/* Firefox */
+html{
+
+    scrollbar-width:thin;
+
+    scrollbar-color:var(--blue) var(--ink);
+
+}
